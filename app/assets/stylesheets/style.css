@@ -672,12 +672,19 @@ ul.pagination li.active a, ul.pagination li > a:hover, ul.pagination li.active a
 .slider-text h2 span {
     display: block;
 }
+.slider-text h4{
+    color: #fff !important;
+}
 .slider-text p {
     color: #fff;
     font-size: 16px;
     margin: 20px 0;
     text-transform: capitalize;
 }
+.gallery-container img{
+    height: 200px;
+}
+
 .bleezy-main-caption a {
     margin: 0 5px;
 }
