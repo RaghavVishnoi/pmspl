@@ -266,7 +266,7 @@ ul.pagination li.active a, ul.pagination li > a:hover, ul.pagination li.active a
 ==================================================*/ 
 
 .breadcromb-top {
-    background: rgba(0, 0, 0, 0) url("/assets/breadcromb_bg.jpeg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("/assets/about-banner.png") repeat scroll 0 0;
     color: #fff;
     padding: 70px 0;
     text-align: center;
@@ -3061,4 +3061,24 @@ ul.pagination li.active a, ul.pagination li > a:hover, ul.pagination li.active a
 .single-contact-address p {
     overflow: hidden;
     color: #333
+}
+
+/* User defined */
+.team-container{
+    width: 300px;
+    height: 300px;
+}
+.team-container .team-text{
+    padding-top: 0px;
+}
+.team-slider .owl-stage{
+    margin: auto;
+}
+
+.client-container{
+    width: 280px;
+    height: 300px;
+}
+.client-row{
+    margin-bottom: 100px;
 }

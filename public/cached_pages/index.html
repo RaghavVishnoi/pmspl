@@ -2,7 +2,7 @@
   <head>
     <title>Pmspl</title>
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="IoqnkKQe9tn2keD5PDwvgM4ZeymD5sNcAwk1Lu20OnjJ+QYiSRHlSPL/qL8gpQoR2mZRNIMiOYMRKhCqTx0TVQ==" />
+<meta name="csrf-token" content="Og3hpntEC++poO0BaZIiIB+PrIH2/3mivm1T50rWeuaHMnqaWu7j0Vxyo1nSOEkYUIy7rXFt0kNplhgtoCsR9Q==" />
 
     <link rel="stylesheet" media="all" href="/assets/animate.min.self-dddf7b17dd109a9155643c59e740f9929be54430813d0a3c2d520cb0e215bd9f.css?body=1" data-turbolinks-track="reload" />
 <link rel="stylesheet" media="all" href="/assets/bootstrap.min.self-cb38666680186b1c90f6a57316bc28bc4715fdfb3e1e9cb2ecf9cada0e4988c2.css?body=1" data-turbolinks-track="reload" />
@@ -12,7 +12,7 @@
 <link rel="stylesheet" media="all" href="/assets/owl.carousel.self-f1105ef8d3df36c1a96fe39253dde9323d8dd8e160c8042efa00f1dae9fa70a1.css?body=1" data-turbolinks-track="reload" />
 <link rel="stylesheet" media="all" href="/assets/responsive.self-dfc2d266a19ab85edc23206725c0d0ecfea05f8bb71db60758269659138ed801.css?body=1" data-turbolinks-track="reload" />
 <link rel="stylesheet" media="all" href="/assets/slicknav.min.self-9bfab0e1bdceff718b72b7c22cdb922c90b285cfd777fba8c202e01a8e19022b.css?body=1" data-turbolinks-track="reload" />
-<link rel="stylesheet" media="all" href="/assets/style.self-dc4f138410fd3a0e45acf05e3b3867a8a3628d4051929e9ee2dd78abebc8eedf.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/style.self-cae42fb6f0ece988bf8b81032ad208d0b2da91c0b2d1b957128110dfb20750ad.css?body=1" data-turbolinks-track="reload" />
 <link rel="stylesheet" media="all" href="/assets/application.self-ccd4210dfcb4f17311561e29253a67a77c9b2eb5abbccff9dcf176de09cc359f.css?body=1" data-turbolinks-track="reload" />
     <script src="/assets/rails-ujs.self-8944eaf3f9a2615ce7c830a810ed630e296633063af8bb7441d5702fbe3ea597.js?body=1" data-turbolinks-track="reload"></script>
 <script src="/assets/jquery.min.self-c74711b8077210a72282c3c7f8a9da468c3f7224ffa4929ddccff692d2944a11.js?body=1" data-turbolinks-track="reload"></script>
@@ -72,22 +72,24 @@
                                 <div class="mainmenu">
                                     <nav>
                                         <ul id="bleezy_navigation">
-                                            <li class="current-page-item">
-                                            	<a href="#">home</a>
+                                            <li id="home">
+                                            	<a href="/">home</a>
                                             </li>
-                                            <li>
-                                            	<a href="#">Why us?</a>
+                                            <li id="about">
+                                            	<a href="/about">Why us?</a>
                                             </li>
-                                            <li>
-                                                <a href="#">What we do?</a>
+                                            <li id="services">
+                                                <a href="/services">What we do?</a>
                                             </li>
-                                            <li>
-                                                <a href="#">Our Clients</a>
+                                            <li id="clients"> 
+                                                <a href="/clients">Our Clients</a>
                                             </li>
-                                            <li>
-                                                <a href="#">Gallery</a>
+                                            <li id="gallery">
+                                                <a href="/gallery">Gallery</a>
                                             </li>
-                                            <li><a href="#">contact</a></li>
+                                            <li id="contact">
+                                                <a href="#">contact</a>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -634,5 +636,10 @@
         </div>
     </div>
 </footer>
+
+<script>
+	$(".bleezy_navigation li").removeAttr("class")
+	$("#home").attr("class", "current-page-item")
+</script>
   </body>
 </html>
