@@ -23,3 +23,5 @@
 //= require jquery.counterup.min
 //= require waypoints-min
 //= require custom
+//= require spinner
+//= require jquery_ujs

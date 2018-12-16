@@ -3039,6 +3039,7 @@ ul.pagination li.active a, ul.pagination li > a:hover, ul.pagination li.active a
     border: 1px solid #ddd;
     margin-bottom: 30px;
     padding: 20px;
+    height: 202px;
 }
 .single-contact-address > h3 {
     border-bottom: 1px solid #212121;

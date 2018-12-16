@@ -37,59 +37,40 @@
 <section class="bleezy-contact-page-area section_t_100 section_b_70">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-6 col-sm-6">
                 <div class="single-contact-address">
-                    <h3>Manchester, UK</h3>
+                    <h3>Regd. Office</h3>
                     <ul>
                         <li>
                             <i class="fa fa-map-marker"></i>
-                            <p>123 Eccles Old Road, New Salford Road London, Uk, M6 7AF</p>
+                            <p>Model Town, Sector 11, Faridabad, Haryana-121006, India</p>
                         </li>
                         <li>
                             <i class="fa fa-phone"></i>
-                            <p>+44 123 456 788 - 9</p>
+                            <p>+91 97110633143</p>
                         </li>
                         <li>
                             <i class="fa fa-envelope-o"></i>
-                            <p>info@domain.com</p>
+                            <p>info@pmspl.co.in</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-6 col-sm-6">
                 <div class="single-contact-address">
-                    <h3>Bolton, UK</h3>
+                    <h3>Corporate Office</h3>
                     <ul>
                         <li>
                             <i class="fa fa-map-marker"></i>
-                            <p>123 Eccles Old Road, New Salford Road London, Uk, M6 7AF</p>
+                            <p>50B 3rd and 4th Floor, Bharat Nagar, New Friends Colony, New Delhi-110025, India</p>
                         </li>
                         <li>
                             <i class="fa fa-phone"></i>
-                            <p>+44 123 456 788 - 9</p>
+                            <p>+91 97110633143</p>
                         </li>
                         <li>
                             <i class="fa fa-envelope-o"></i>
-                            <p>info@domain.com</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="single-contact-address">
-                    <h3>Warrington, UK</h3>
-                    <ul>
-                        <li>
-                            <i class="fa fa-map-marker"></i>
-                            <p>123 Eccles Old Road, New Salford Road London, Uk, M6 7AF</p>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone"></i>
-                            <p>+44 123 456 788 - 9</p>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope-o"></i>
-                            <p>info@domain.com</p>
+                            <p>info@pmspl.co.in</p>
                         </li>
                     </ul>
                 </div>
@@ -111,46 +92,46 @@
                         <h3>get in touch</h3>
                         <p>Our experts will reply you very soon</p>
                     </div>
-                    <form>
+                    <div id="contact-form-container">
                         <div class="row">
                             <div class="col-md-4 col-sm-4">
                                 <p>
-                                    <input type="text" name="name" placeholder="Your Name" >
+                                    <%=text_field_tag :name,'', placeholder: 'Your Name'%>
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <p>
-                                    <input type="email" name="email" placeholder="Your Email" >
+                                    <%=email_field_tag :email,'', placeholder: 'Your Email'%>
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-4">
                                 <p>
-                                    <input type="tel" name="phone" placeholder="Your Phone Number" >
+                                    <%=text_field_tag :name,'', placeholder: 'Your Phone'%>
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <p>
-                                    <textarea name="Message" placeholder="Write Your Message" ></textarea>
+                                    <%=text_area_tag :description,'', placeholder: "write your message"%>
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="contact-form-button">
-                                    <button type="submit" name="submit" >Send message</button>
+                                    <button type="submit" name="submit" onclick="sendComment()">Send message</button>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </div>    
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Contact Form Area End -->
-
+<%= render 'sections/home/hidden_form'%>
 
 <%= render 'common/footer' %>
 

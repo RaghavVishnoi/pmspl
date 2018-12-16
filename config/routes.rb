@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'clients' => 'sites#clients'
   get 'gallery' => 'sites#gallery'
   get 'contact' => 'sites#contact'
+  post 'send_email' => 'sites#send_email'
 
 end
