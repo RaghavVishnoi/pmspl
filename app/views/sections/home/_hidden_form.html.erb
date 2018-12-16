@@ -1,0 +1,6 @@
+<%= form_tag '/send_email', method: 'POST', remote: true, id: 'send_email' do |f| %>
+	<%= hidden_field_tag :name %>
+	<%= hidden_field_tag :email %>
+	<%= hidden_field_tag :phone %>
+	<%= hidden_field_tag :description %>
+<% end %>
